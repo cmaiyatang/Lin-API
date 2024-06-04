@@ -75,6 +75,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LinApiInterfaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="lin-api-interface" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cyl.linapiinterface.LinApiInterfaceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Lin-API-backend" />

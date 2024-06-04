@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/lin-api-backend/pom.xml" />
         <option value="$PROJECT_DIR$/linapi-client-sdk/pom.xml" />
         <option value="$PROJECT_DIR$/lin-api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/lin-api-interface/pom.xml" />
       </list>
     </option>
   </component>

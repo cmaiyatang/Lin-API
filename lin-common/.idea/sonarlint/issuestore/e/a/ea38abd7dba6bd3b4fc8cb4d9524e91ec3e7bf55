@@ -1,0 +1,4 @@
+
+–	java:S1162"VRename this field "create_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÌó¹ùÿÿÿÿJ$7439cf5a-f950-4e6d-981f-d07093b3fde2
+‘	java:S1167"VRename this field "update_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ßóøJ$c959e576-230a-4284-ba1b-8b94ad5101eb
+	java:S116="URename this field "is_deleted" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¶¹ÈJ$4e8cf179-beca-4e88-8bcd-209cf42fb373
