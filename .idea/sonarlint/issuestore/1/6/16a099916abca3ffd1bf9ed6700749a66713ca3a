@@ -1,0 +1,8 @@
+
+•	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ûå‡ÙJ$3bb82172-7aa6-48a3-b70e-7777faf66f66
+k	java:S106)"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿJ$3bb836eb-5e94-4442-adb6-324fb75d7c07
+k	java:S1063"+Replace this use of System.out by a logger.(…ÇÉúÿÿÿÿJ$4c6fd90d-6e1b-4c1d-a5e0-05e199ce7b5f
+k	java:S1065"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿJ$1042b689-173e-4e82-b9ea-105e277c4999
+|	java:S125="<This block of commented-out lines of code should be removed.(¾™…˜ûÿÿÿÿJ$e949f180-f24c-4596-83ee-68fed572e439
+f
+java:S1068"*Remove this unused "MYHost" private field.(Ûå‡ÙJ$57e43413-0cd9-4445-93dd-883bc28604e9

@@ -13,7 +13,7 @@
 <!--        <module>lin-api-gateway</module>-->
 <!--        <module>lin-api-interface</module>-->
 <!--        <module>lin-common</module>-->
-<!--        <module>linapi-client-sdk</module>-->
+        <module>linapi-client-sdk</module>
     </modules>
     <packaging>pom</packaging>
 

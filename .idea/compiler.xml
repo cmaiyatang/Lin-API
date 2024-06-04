@@ -7,13 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Lin-API-backend" />
+        <module name="linapi-client-sdk" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lin-api-gateway" target="1.8" />
       <module name="lin-api-interface" target="1.8" />
       <module name="lin-common" target="1.8" />
-      <module name="linapi-client-sdk" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
