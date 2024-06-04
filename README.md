@@ -2,9 +2,7 @@
 
 #### 介绍
 基于Spring Boot + Dubbo + Gateway的API接口开放调用平台
-
 管理员可以接入并发布接口，通过SDK封装签名调用接口
-
 通过Spring Cloud Gateway 网关校验签名，使用Dubbo Nacos注册服务，帮助网关查询用户，接口是否存在，实现接口调用次数加一
 
 #### 软件架构
