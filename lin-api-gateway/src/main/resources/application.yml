@@ -1,0 +1,23 @@
+server:
+  port: 8200
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route
+          uri: http://localhost:8102
+          predicates:
+            - Path=/api/**
+#          filters:
+#            - AddRequestHeader=younglin,cyl
+#            - AddRequestParameter=name, cyl
+
+#localhost:8200/api/name/get/?name=younglin => localhost:8102/name/get/?name=younglin
+dubbo:
+  application:
+    name: dubbo-springboot-demo-consumer
+    logger: slf4j
+    qos-port: 33333
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848?username=nacos&password=nacos
