@@ -8,10 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Lin-API-backend" />
         <module name="linapi-client-sdk" />
+        <module name="lin-api-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lin-api-gateway" target="1.8" />
       <module name="lin-api-interface" target="1.8" />
       <module name="lin-common" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Lin-API-backend" options="-parameters" />
+      <module name="lin-api-gateway" options="-parameters" />
     </option>
   </component>
 </project>
