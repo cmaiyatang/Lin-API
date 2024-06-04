@@ -1,12 +1,14 @@
 # Lin-API
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+基于Spring Boot + Dubbo + Gateway的API接口开放调用平台
+管理员可以接入并发布接口，通过SDK封装签名调用接口
+通过Spring Cloud Gateway 网关校验签名，使用Dubbo Nacos注册服务，帮助网关查询用户，接口是否存在，实现接口调用次数加一
 
 #### 软件架构
 软件架构说明
+将项目分为五个模块
+    1.
 
 
 #### 安装教程
