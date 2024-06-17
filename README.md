@@ -1,6 +1,9 @@
 # Lin-API
 
-![image](https://github.com/cmaiyatang/Lin-API/assets/127107267/600485c7-68ee-4403-818f-3b7f4b23c219)
+项目架构图
+
+![image](https://github.com/cmaiyatang/Lin-API/assets/127107267/592b5658-893f-4b20-99f3-f1d0b3800e93)
+
 
 
 #### 介绍
