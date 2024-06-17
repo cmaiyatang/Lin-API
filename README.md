@@ -1,7 +1,6 @@
 # Lin-API
 
-![image](https://github.com/cmaiyatang/Lin-API/assets/127107267/a6688d2c-8736-4465-a3e2-b98edcc74494)
-
+![image](https://github.com/cmaiyatang/Lin-API/assets/127107267/600485c7-68ee-4403-818f-3b7f4b23c219)
 
 
 #### 介绍
