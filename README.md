@@ -29,6 +29,59 @@
    
    **5.lin-api-interface**：提供接口服务
 
+## 数据库表设计
+
+
+
+​	用户 =》接口（多对多）
+
+用户接口关系表
+
+user_interface_info
+
+```sql
+-- 用户接口信息表
+create table if not exists yapi.`user_interface_info`
+(
+    `id`              bigint                             not null auto_increment comment '主键' primary key,
+    `userId`          bigint                             not null comment '用户id',
+    `interfaceInfoId` bigint                             not null comment '接口id',
+    `totalNum`        int      default 0                 not null comment '总调用次数',
+    `leftNum`         int      default 0                 not null comment '剩余调用次数',
+    `status`          int      default 0                 not null comment '0-正常，1-禁用',
+    `create_time`     datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    `update_time`     datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    `is_deleted`      tinyint  default 0                 not null comment '是否删除(0-未删, 1-已删)'
+) comment '用户接口信息表';
+
+```
+
+```
+create table if not exists yapi.interface_info
+(
+    id               bigint auto_increment comment '主键'
+        primary key,
+    name             varchar(256)                       not null comment '接口名称',
+    description      varchar(256)                       null comment '接口描述',
+    url              varchar(512)                       not null comment '接口地址',
+    sdkPath          varchar(64)                        not null comment '接口对应的SDK',
+    parameterExample varchar(128)                       null comment '接口请求示例',
+    requestHeader    text                               null comment '请求头',
+    requestParams    varchar(512)                       null comment '请求参数',
+    responseHeader   text                               null comment '响应头',
+    sdkInvokeMethod  varchar(32)                        null comment 'sdk里调用接口的方法',
+    status           int      default 0                 not null comment '接口状态（0-关闭，1-开启）',
+    method           varchar(256)                       not null comment '请求类型',
+    userId           bigint                             null comment '创建人',
+    create_time      datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    update_time      datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    is_deleted       tinyint  default 0                 not null comment '是否删除(0-未删, 1-已删)'
+)
+    comment '接口信息表';
+``` 
+
+
+
 
 **项目笔记**
 ## api签名认证
@@ -237,55 +290,4 @@ com.cyl.ylapiclientsdk.model.User user = gson.fromJson(userRequestParams, com.cy
 1.用户调用接口成功后次数+1 修改数据库次数 + 1
 
 
-
-数据库表设计
-
-
-
-​	用户 =》接口（多对多）
-
-用户接口关系表
-
-user_interface_info
-
-```sql
--- 用户接口信息表
-create table if not exists yapi.`user_interface_info`
-(
-    `id`              bigint                             not null auto_increment comment '主键' primary key,
-    `userId`          bigint                             not null comment '用户id',
-    `interfaceInfoId` bigint                             not null comment '接口id',
-    `totalNum`        int      default 0                 not null comment '总调用次数',
-    `leftNum`         int      default 0                 not null comment '剩余调用次数',
-    `status`          int      default 0                 not null comment '0-正常，1-禁用',
-    `create_time`     datetime default CURRENT_TIMESTAMP not null comment '创建时间',
-    `update_time`     datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
-    `is_deleted`      tinyint  default 0                 not null comment '是否删除(0-未删, 1-已删)'
-) comment '用户接口信息表';
-
-```
-
-```
-create table if not exists yapi.interface_info
-(
-    id               bigint auto_increment comment '主键'
-        primary key,
-    name             varchar(256)                       not null comment '接口名称',
-    description      varchar(256)                       null comment '接口描述',
-    url              varchar(512)                       not null comment '接口地址',
-    sdkPath          varchar(64)                        not null comment '接口对应的SDK',
-    parameterExample varchar(128)                       null comment '接口请求示例',
-    requestHeader    text                               null comment '请求头',
-    requestParams    varchar(512)                       null comment '请求参数',
-    responseHeader   text                               null comment '响应头',
-    sdkInvokeMethod  varchar(32)                        null comment 'sdk里调用接口的方法',
-    status           int      default 0                 not null comment '接口状态（0-关闭，1-开启）',
-    method           varchar(256)                       not null comment '请求类型',
-    userId           bigint                             null comment '创建人',
-    create_time      datetime default CURRENT_TIMESTAMP not null comment '创建时间',
-    update_time      datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
-    is_deleted       tinyint  default 0                 not null comment '是否删除(0-未删, 1-已删)'
-)
-    comment '接口信息表';
-``` 
 
