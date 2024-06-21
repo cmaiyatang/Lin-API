@@ -31,11 +31,9 @@
 
 ## 数据库表设计
 
+​用户 =》接口（多对多）
 
-
-​	用户 =》接口（多对多）
-
-用户接口关系表
+**用户接口关系表**
 
 user_interface_info
 
@@ -55,6 +53,8 @@ create table if not exists yapi.`user_interface_info`
 ) comment '用户接口信息表';
 
 ```
+
+**接口信息表**
 
 ```
 create table if not exists yapi.interface_info
